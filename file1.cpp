@@ -64,5 +64,15 @@ void binarysearch(){
         if (element[mid] == x){
        return;
         }
+        if  cout << "Ditemukan pada index "<< mid << endl;
+          (x < element[mid]){
+            high = mid-1;
+        }
+        if (x > element[mid]){
+            low = mid +1;
+        }
+    }while(low <= high);
+    if (low > high){
+        cout <<x<< "Tidak Ditemukan" << endl;
     }
 }
