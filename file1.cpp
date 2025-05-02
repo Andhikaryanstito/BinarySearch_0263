@@ -40,3 +40,16 @@ void bubbleSortArray(){
    }while(pass <= npanjang-1); //step 5
     
 }
+void display(){
+    cout << endl;
+    cout << "=================================" << endl;
+    cout << "Element Array yang telah tersusun" << endl;
+    cout << "=================================" << endl;
+    cout << endl;
+    for (int j=0;j<npanjang;j++){
+        cout << element[j];
+        if (j<npanjang-1) {
+            cout << " --> ";
+        }
+    }
+}
