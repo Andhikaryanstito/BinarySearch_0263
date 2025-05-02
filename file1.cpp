@@ -53,3 +53,8 @@ void display(){
         }
     }
 }
+void binarysearch(){
+    cout <<"\nmasukkan element yang ingin dicari = ";
+    cin >> x;
+    int low = 0;
+    int high = npanjang-1;
