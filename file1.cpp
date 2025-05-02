@@ -4,6 +4,7 @@ using namespace std;
 int element[10];
 int npanjang;
 int x;
+
 void input() { //prosedur input
     while (true){
         cout << "Masukkan banyaknya elemen pada array: ";
@@ -25,6 +26,7 @@ void input() { //prosedur input
         cin >> element[i];
     }
 }
+
 void bubbleSortArray(){
     int pass = 1; //step 1
    do{
@@ -40,6 +42,7 @@ void bubbleSortArray(){
    }while(pass <= npanjang-1); //step 5
     
 }
+
 void display(){
     cout << endl;
     cout << "=================================" << endl;
@@ -53,6 +56,7 @@ void display(){
         }
     }
 }
+
 void binarysearch(){
     cout <<"\nmasukkan element yang ingin dicari = ";
     cin >> x;
@@ -64,7 +68,7 @@ void binarysearch(){
         if (element[mid] == x){
        return;
         }
-        if  cout << "Ditemukan pada index "<< mid << endl;
+        if cout  << "Ditemukan pada index "<< mid << endl;
           (x < element[mid]){
             high = mid-1;
         }
@@ -75,4 +79,11 @@ void binarysearch(){
     if (low > high){
         cout <<x<< "Tidak Ditemukan" << endl;
     }
+}
+
+int main(){
+input();
+bubbleSortArray();
+display();
+binarysearch();
 }
