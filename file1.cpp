@@ -58,3 +58,11 @@ void binarysearch(){
     cin >> x;
     int low = 0;
     int high = npanjang-1;
+    
+    do{
+        int mid = (low + high)/2;
+        if (element[mid] == x){
+       return;
+        }
+    }
+}
